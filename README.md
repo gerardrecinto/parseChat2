@@ -1,62 +1,35 @@
-b 4 - *Name of App Here*
+# Parse Chat
 
-**Name of your app** is a Chat app using an [open source Parse](http://parseplatform.org/) backend.
+A real-time iOS chat app built with Swift and UIKit, using Parse as the backend for authentication and message storage.
 
-Time spent: **3** hours spent in total
+## Features
 
-## User Stories
+- User sign up and login with error alerts for invalid credentials or existing accounts
+- Compose and send messages in real time
+- Chronological message feed with dynamic cell height based on message length
+- Username shown on each message
+- Persistent login across app launches
 
-The following **required** user stories are complete:
+## Tech Stack
 
-- [x ] User can sign up and sign in to the login screen (+1pt)
-- [x ] User sees alerts for login exceptions, i.e. "account already exists", "wrong credentials", etc. (+1pt)
-- [x ] User can compose and send chat messages (+2pt)
-- [x ] User can view a list of chat messages in chronological order (+2pt)
-- [x ] Automatically Adjust Cell Size to Fit Text (+1pt)
-- [x ] Username of chat author is displayed in each chat message (+2pt)
-- [x ] Persist Logged in User (+1pt)
+| Layer | Technology |
+|---|---|
+| Language | Swift |
+| UI | UIKit, Auto Layout |
+| Backend | Parse |
+| Dependencies | CocoaPods |
 
-The following **optional** user stories are implemented:
+## Setup
 
-- [ ] User sees an activity indicator while waiting for authentication (+1pt)
-- [ ] User can pull to refresh Chat feed (+1pt)
-- [ ] Add an "Adorable Avatar" for each user by requesting an avatar from the [Adorable Avatars API](https://github.com/adorableio/avatars-api) (+2pt)
-- [ ] Chat Bubble Style Design (+3pt)
-- [ ] Expand or contract the cell layout as needed to show the chat message author (user) if it exists (+2pt)
+```bash
+git clone https://github.com/gerardrecinto/parseChat2.git
+cd parseChat2
+pod install
+open parseChat.xcworkspace
+```
 
-The following **additional** user stories are implemented:
+Configure your Parse application ID and server URL in `AppDelegate.swift` before building.
 
-- [ ] List anything else that you can get done to improve the app functionality! (+1-3pts)
+## Demo
 
-Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
-
-1.
-2.
-
-## Video Walkthrough
-
-Here's a walkthrough of implemented user stories:
-
-<img src='https://imgur.com/kp8tW39.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
-
-## Notes
-
-Describe any challenges encountered while building the app.
-
-## License
-
-    Copyright [yyyy] [name of copyright owner]
-
-        Licensed under the Apache License, Version 2.0 (the "License");
-	    you may not use this file except in compliance with the License.
-	        You may obtain a copy of the License at
-
-		        http://www.apache.org/licenses/LICENSE-2.0
-
-			    Unless required by applicable law or agreed to in writing, software
-			        distributed under the License is distributed on an "AS IS" BASIS,
-				    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-				        See the License for the specific language governing permissions and
-					    limitations under the License.
+![Demo](https://imgur.com/kp8tW39.gif)
