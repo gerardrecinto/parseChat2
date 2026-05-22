@@ -1,5 +1,10 @@
 # Parse Chat
 
+![Swift](https://img.shields.io/badge/Swift-3%2B-F05138?logo=swift&logoColor=white)
+![iOS 9+](https://img.shields.io/badge/iOS-9%2B-000000?logo=apple&logoColor=white)
+![Parse](https://img.shields.io/badge/Backend-Parse-purple)
+![UIKit](https://img.shields.io/badge/UIKit-Auto%20Layout-blue)
+
 A real-time iOS chat app built with Swift and UIKit, using Parse as the backend for authentication and message storage.
 
 ## Features
