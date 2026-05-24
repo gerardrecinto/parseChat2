@@ -1,7 +1,7 @@
 # Parse Realtime Chat
 
-![Swift](https://img.shields.io/badge/Swift-3%2B-F05138?logo=swift&logoColor=white)
-![iOS 9+](https://img.shields.io/badge/iOS-9%2B-000000?logo=apple&logoColor=white)
+![Swift](https://img.shields.io/badge/Swift-6.0-F05138?logo=swift&logoColor=white)
+![iOS 16+](https://img.shields.io/badge/iOS-16%2B-000000?logo=apple&logoColor=white)
 ![Parse](https://img.shields.io/badge/Backend-Parse-purple)
 ![UIKit](https://img.shields.io/badge/UIKit-Auto%20Layout-blue)
 ![CocoaPods](https://img.shields.io/badge/CocoaPods-Parse-red)
@@ -24,11 +24,11 @@
 
 | Layer | Technology |
 |---|---|
-| Language | Swift 3 |
+| Language | Swift 6.0 |
 | UI | UIKit, UITableView, UITableViewAutomaticDimension, Auto Layout |
-| Backend | Parse SDK (PFObject, PFUser, PFQuery) |
+| Backend | Local in-memory store|
 | Real-Time Mechanism | `Timer.scheduledTimer` polling at 5-second intervals |
-| Auth | PFUser session token persisted by Parse SDK |
+| Auth | PFUser session token persisted by Local in-memory store|
 | Dependencies | CocoaPods — Parse |
 
 ## Architecture
